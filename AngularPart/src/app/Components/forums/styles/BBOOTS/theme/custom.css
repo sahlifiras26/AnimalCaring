@@ -1,0 +1,61 @@
+/*****************************************************************
+* Custom CSS Stylesheet. You can add any custom CSS selectors here after the comment line 
+* They will be given the highest priority on any elements on the forum
+* Customize your forum color scheme in one click: www.sitesplat.com/phpBB3/ 
+* **************************************************************
+*
+* BBOOTS @SiteSplat.com - Custom CSS STYLESHEET - 
+* 
+* **************************************************************
+*****************************************************************/
+/* ===[ CSS HOOK TOP ]=== */
+ 
+.topic-icon {
+	float: left;
+	display: block;
+    height: 16px;
+    margin-left: -5px;
+    margin-top: -5px;
+    position: absolute;
+    width: 16px;
+}
+
+
+.recent-row {
+    min-height: 395px;
+}
+
+
+@media (min-width: 468px) {
+.row-topics {
+    min-height: 383px;
+}
+
+
+.row-twitter {
+    min-height: 260px;
+}
+
+
+.row-fav {
+    min-height: 231px;
+}
+
+.row-about {
+    min-height: 213px;
+}
+
+}
+
+
+.plugin #providers .provider {
+    width: 72px !important;
+    padding: 0px 0 12px!important;
+}
+
+.plugin #providers .provider .button {
+    width: 62px;
+    height: 62px;
+    border-radius: 4px;
+}
+/* ===[ CSS HOOK BOTTOM ]=== */

@@ -1,0 +1,182 @@
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Set the viewport width to device width for mobile -->
+  <meta name="Description" content=""><!-- Set Your forum description here inside the "" tag -->
+  <meta name="Keywords" content=""><!-- Set Your forum keywords here inside the "" tag and make sure they are separated by a comma -->
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <title>Main</title>
+
+</head>
+<body data-spy="scroll" data-target=".scrollspy" id="phpbb" class="section-index ltr ">
+
+<div id="wrap" class="corners container">
+  <!-- start content -->
+  <div id="content-forum">
+    <div class="padding_0_40">
+
+
+      <!-- Subheader block -->
+      <section class="subheader">
+        <div class="clearfix">
+          <div class="fxicon">
+            <i class="fa fa-home"></i>
+          </div>
+
+          <ul class="index-pos pull-left">
+            <li class="index-title"><h1>Animal Caring forums</h1></li>
+            <li class="index-sub">The place where all your problems will be solved.</li>
+          </ul>
+
+
+          <div class="search-box pull-right">
+            <form action="" method="get" id="search">
+              <fieldset>
+                <input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" placeholder="Search" value="">
+
+              </fieldset>
+            </form>
+          </div>
+
+        </div>
+      </section>
+      <!-- Subheader block -->
+
+
+      <!-- Lower Breadcrumb block -->
+      <div class="sub-breadcrumb">
+        <span class="time pull-left">It is currently 25 Nov 2017, 21:25</span>
+      </div>
+      <!-- Lower Breadcrumb block -->
+
+      <div id="page-body">
+        <main>
+
+
+          <div class="panel panel-default">
+            <table class="footable table table-striped table-bordered table-white table-primary table-hover">
+              <thead>
+              <tr>
+                <th data-class="expand"><i class="fa fa-list-ol"></i> <a href="viewforum.html?f=1">Your first category</a></th>
+                <th class="large80" data-hide="phone"><i class="fa fa-bar-chart-o"></i> Statistics</th>
+                <th class="large20" data-hide="phone"><i class="fa fa-comments-o"></i> Last post</th>
+              </tr>
+
+              </thead>
+              <tbody>
+
+
+
+
+
+              <tr *ngFor="let f of forums">
+                <td title="No unread posts">
+						<span class="icon-wrapper">
+<i class="row-icon-font icon-moon-default forum-read"></i>
+			</span>
+                  <span class="desc-wrapper">
+				<a href="viewforum-1.html?f=2" class="forumtitle">{{f.nameForum}}</a><br>
+				<span class="description">{{f.descForum}}</span><br>
+				<span class="forum-mods"><strong>Moderator:</strong>&nbsp;<a href="memberlist-2.html?mode=viewprofile&amp;u=2" style="color: #AA0000;" class="username-coloured">{{f.supervisor.firstName}}</a></span>
+				  </span>
+                </td>
+                <td class="stats-col">
+			 <span class="stats-wrapper">
+			 10&nbsp;Topics&nbsp;<br>17&nbsp;Posts
+			 			 </span>
+                </td>
+                <td>
+			  <span class="last-wrapper text-overflow">
+
+								by&nbsp;<a href="memberlist-1.html?mode=viewprofile&amp;u=221" class="username">deliac</a>
+				<a class="moderator-item" href="viewtopic.html?f=2&amp;p=68#p68" title="View the latest post"><i class="mobile-post fa fa-sign-out"></i></a>				<br><span class="forum-time">22 Jan 2015, 11:19</span>			  </span>
+                </td>
+
+              </tr>
+              <!-- Table footer not used at the moment
+                      <tfoot>
+                       <tr>
+                          <th>Game Name</th>
+                          <th>Publisher</th>
+                          <th>Platform</th>
+                       </tr>
+                      </tfoot>
+                  Table footer not used at the moment -->
+
+              </tbody></table>
+          </div>
+
+
+
+
+
+
+
+
+          <div class="row">
+            <div class="col-md-12">
+
+              <div class="col-md-6">
+                <div class="side-segment"><h3>Who is online</h3></div>
+                <p>In total there are <strong>0</strong> users online :: 0 registered and 0 hidden (based on users active over the past 5 minutes)<br>Most users ever online was <strong>25</strong> on 11 Nov 2013, 05:16<br> <br>Registered users: No registered users
+                  <br><small>Legend: <a style="color:#AA0000" href="memberlist-3.html?mode=group&amp;g=5">Administrators</a>, <a style="color:#00AA00" href="memberlist-4.html?mode=group&amp;g=4">Global moderators</a></small></p>
+
+
+              </div>
+
+              <div class="col-md-6">
+                <div class="side-segment"><h3>Statistics</h3></div>
+                <p>Total posts <strong>20</strong> &bull; Total topics <strong>12</strong> &bull; Total members <strong>394</strong> &bull; Our newest member <strong><a href="memberlist-5.html?mode=viewprofile&amp;u=454" class="username">rrr</a></strong></p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <footer> <!-- Footer block -->
+
+
+            <div class="row bottomLinks"> <!-- Credit, links and copyright block do not remove please -->
+              <div class="col-md-12">
+                <div class="pull-left">
+                  <small>Powered By <a href="http://www.phpbb.com/" title="Forum Software &copy; phpBB&reg; Group" target="_blank"> phpBB</a> - <i aria-hidden="true" class="fa fa-html5"></i> <i aria-hidden="true" class="fa fa-css3"></i></small>
+                </div>
+
+                <div class="pull-right">
+                  <small>HandCrafted With&nbsp;<i class="fa fa-heart rosso"></i>&nbsp;And&nbsp;<i class="fa fa-coffee"></i>&nbsp;by:&nbsp;<a href="http://themeforest.net/user/themesplat/portfolio?ref=ThemeSplat" title="SiteSplat.com" target="_blank">SiteSplat</a>&nbsp;&copy;SiteSplat 2013</small>
+                </div>
+              </div>
+            </div> <!-- Credit, links and copyright block do not remove please -->
+          </footer>
+
+        </main>
+      </div><!-- page-body id in header -->
+    </div> <!-- padding_0_40 in header -->
+  </div> <!-- content-forum in header -->
+</div> <!-- wrap - corners container in header -->
+
+<a id="totop" class="topstyle" href="" onclick="return false;" style="display:none;"><i class="fa fa-chevron-up"></i></a>
+
+
+
+
+
+<!-- injected via core and ajax JS for the return confirmation actions -->
+<div id="page-footer">
+  <div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+    <div id="darken">&nbsp;</div>
+  </div>
+
+  <div id="phpbb_alert" class="alert alert-default phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+    <button type="button" class="close alert_close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <h3 class="alert_title">&nbsp;</h3>
+    <p class="alert_text">
+  </div>
+
+  <div id="phpbb_confirm" class="alert alert-default phpbb_alert">
+    <button type="button" class="close alert_close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <div class="alert_text"></div>
+  </div>
+</div>
+</body>
